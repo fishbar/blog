@@ -1,0 +1,9 @@
+---
+layout: default
+title: 我的blog
+---
+
+文章列表
+  {% for post in site.posts %}
+    <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+  {% endfor %}
